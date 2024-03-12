@@ -1,0 +1,37 @@
+.containerIntro {
+  background-color: var(--brand-1);
+}
+
+.contentIntro {
+  width: 596px;
+  height: 305px;
+  border-radius: 8px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.divTextIntro {
+  display: flex;
+  width: 596px;
+  height: 229px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+}
+
+.divTextIntro2 {
+  width: 570px;
+  height: 84px;
+  top: 293px;
+  left: 208px;
+}
+
+.divButtonIntro {
+  width: 239px;
+  height: 44px;
+  display: flex;
+  gap: 0.3rem;
+  border-radius: 8px;
+}
