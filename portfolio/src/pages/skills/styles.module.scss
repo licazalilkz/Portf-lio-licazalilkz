@@ -1,4 +1,28 @@
 .containerSkills {
   background-color: var(--gray-4);
   height: 282px;
+  display: flex;
+  align-items: center;
+}
+
+.containerTools {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-5);
+    border-radius: 15px;
+    width: 164px;
+    height: 116px;
+  }
 }
