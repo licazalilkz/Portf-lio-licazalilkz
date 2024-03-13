@@ -4,13 +4,13 @@ import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 
 export const HeaderComponent = () => {
-  const openLinkedin = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openLinkedin = () => {
     window.open(
       "https://linkedin.com/in/matheus-l-novais-667399231/",
       "_blank"
     );
   };
-  const openGithub = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openGithub = () => {
     window.open("https://github.com/licazalilkz", "_blank");
   };
   return (
@@ -33,13 +33,13 @@ export const HeaderComponent = () => {
               </button>
               <button
                 className={styles.buttonStyleImg}
-                onClick={(event) => openGithub(event)}
+                onClick={() => openGithub()}
               >
                 <img src={github} alt="github" />
               </button>
               <button
                 className={styles.buttonStyleImg}
-                onClick={(event) => openLinkedin(event)}
+                onClick={() => openLinkedin()}
               >
                 <img src={linkedin} alt="linkedin" />
               </button>

@@ -1,8 +1,7 @@
-import { Projects } from "../myprojects";
 import styles from "./styles.module.scss";
 
 export const IntroComponent = () => {
-  const openProjects = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openProjects = () => {
     window.open(
       "https://github.com/orgs/Kenzie-Academy-Brasil-Developers/repositories?type=public&q=licazalilkz",
       "_blank"
@@ -26,7 +25,7 @@ export const IntroComponent = () => {
           <div className={styles.divButtonIntro}>
             <button
               className={styles.buttonStyle}
-              onClick={(event) => openProjects(event)}
+              onClick={() => openProjects()}
             >
               <span className="Heading-4-600">projetos</span>
             </button>

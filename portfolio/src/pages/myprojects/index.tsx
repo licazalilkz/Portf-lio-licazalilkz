@@ -3,42 +3,42 @@ import githubIMG from "../assets/github.png";
 import toPageIMG from "../assets/share.png";
 
 export const Projects = () => {
-  const openLinkedin = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openLinkedin = () => {
     window.open(
       "https://linkedin.com/in/matheus-l-novais-667399231/",
       "_blank"
     );
   };
 
-  const openLinkBurgerGit = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openLinkBurgerGit = () => {
     window.open(
       "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-template-hamburgueria-licazalilkz",
       "_blank"
     );
   };
 
-  const openLinkBurgerVersel = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openLinkBurgerVersel = () => {
     window.open(
       "https://react-entrega-s3-template-hamburgueria-licazalilkz.vercel.app",
       "_blank"
     );
   };
 
-  const openLinkApi = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openLinkApi = () => {
     window.open(
       "https://github.com/Kenzie-Academy-Brasil-Developers/crud_admin_m4-licazalilkz",
       "_blank"
     );
   };
 
-  const openLinkBandKampGit = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openLinkBandKampGit = () => {
     window.open(
       "https://github.com/licazalilkz/m5-bandkamp-generic-view-licazalilkz",
       "_blank"
     );
   };
 
-  const openLinkBandKampApi = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const openLinkBandKampApi = () => {
     window.open(
       "https://m5-bandkamp-generic-view-licazalilkz.onrender.com/api/docs/",
       "_blank"
@@ -60,7 +60,7 @@ export const Projects = () => {
               </div>
               <button
                 className={styles.buttonStyle}
-                onClick={(event) => openLinkedin(event)}
+                onClick={() => openLinkedin()}
               >
                 <span className="body-1-600"> Acessar perfil no LinkedIn</span>
               </button>
@@ -88,14 +88,14 @@ export const Projects = () => {
                 <div className={styles.divCardButtons}>
                   <button
                     className={styles.cardButton}
-                    onClick={(event) => openLinkBurgerGit(event)}
+                    onClick={() => openLinkBurgerGit()}
                   >
                     <img src={githubIMG} alt="GitHub" />
                     <p>GitHub</p>
                   </button>{" "}
                   <button
                     className={styles.cardButton}
-                    onClick={(event) => openLinkBurgerVersel(event)}
+                    onClick={() => openLinkBurgerVersel()}
                   >
                     <img src={toPageIMG} alt="toShare" />
                     <p>Aplicação</p>
@@ -122,14 +122,14 @@ export const Projects = () => {
                 <div className={styles.divCardButtons}>
                   <button
                     className={styles.cardButton}
-                    onClick={(event) => openLinkBandKampGit(event)}
+                    onClick={() => openLinkBandKampGit()}
                   >
                     <img src={githubIMG} alt="GitHub" />
                     <p>GitHub</p>
                   </button>{" "}
                   <button
                     className={styles.cardButton}
-                    onClick={(event) => openLinkBandKampApi(event)}
+                    onClick={() => openLinkBandKampApi()}
                   >
                     <img src={toPageIMG} alt="toShare" />
                     <p>Aplicação</p>
@@ -160,7 +160,7 @@ export const Projects = () => {
                 <div className={styles.divCardButtons}>
                   <button
                     className={styles.cardButton}
-                    onClick={(event) => openLinkApi(event)}
+                    onClick={() => openLinkApi()}
                   >
                     <img src={githubIMG} alt="GitHub" />
                     <p>GitHub</p>
